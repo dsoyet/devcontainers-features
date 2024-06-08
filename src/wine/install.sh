@@ -4,7 +4,7 @@ set -e
 WINEVERSION="${VERSION:-"latest"}"
 
 WINEHOME=$_REMOTE_USER_HOME
-WINEPREFIX="$WINEHOME/.wine32"
+WINEPREFIX="$WINEHOME/.local/share/wine"
 # WINEARCH="win32"
 # WINEDEBUG="-all"
 
@@ -59,8 +59,8 @@ install_wine() {
   chmod +rx /usr/bin/winetricks
 
   snippet="export WINEHOME=\"$_REMOTE_USER_HOME\"
-export WINEPREFIX=\"\$WINEHOME/.wine32\"
-export WINEARCH=win32
+export WINEPREFIX=\"\$WINEHOME/.local/share/wine\"
+export WINEARCH=win64
 export WINEDEBUG=-all"
 
   update_rc_file "$_REMOTE_USER_HOME/.zshenv" "${snippet}"
