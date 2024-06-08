@@ -7,7 +7,7 @@ Installs Wine.
 
 ```json
 "features": {
-    "ghcr.io/Maks1mS/devcontainers-features/wine:0": {}
+    "ghcr.io/dsoyet/devcontainers-features/wine:0": {}
 }
 ```
 
@@ -23,4 +23,4 @@ This Feature works on recent versions of Debian.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/Maks1mS/devcontainers-features/blob/main/src/wine/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/dsoyet/devcontainers-features/blob/main/src/wine/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
